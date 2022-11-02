@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+  
+}
+body{
+    background-color: lightgoldenrodyellow;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    height: 17vh;
+    align-items: center;
+}
+.logo{
+    width:6rem;
+    height: 6.7rem;
+}
+.list{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+
+.list_elements{
+  color: gray; 
+  font-size: 1.2rem;
+   
+}
+.product{
+    position: relative;
+}
+.dropdown_container{
+  display: none;
+ position: absolute;
+  top: 70px;
+  width: 28vw;
+    background-color: white;
+    color: gray;
+    padding: 13px 23px;
+
+    
+}
+.dropdownitem{
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+  
+}
+.head{
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+}
+.text{
+    display:flex;
+    color: black;
+}
+.dropdownitem h1{
+    font-size: large;
+}
+.dropdownitem p{
+    font-size: medium;
+}
+.signin{
+    color: gray; 
+    margin-right: 14px;
+    font-size: 1.2rem; 
+}
+.signin_button{
+    padding: 13px 23px;
+    font-size: 1rem; 
+    border-radius: 10px;
+    border: none;
+    background-color: #3b5441;
+    color: white;
+    font-weight: 550;
+}
+#menu{
+   
+    visibility: hidden;
+}
+#close{
+    display: none;
+    visibility: hidden;
+}
+main{
+    display: flex;
+margin: 23px 23px;
+justify-content: space-evenly;
+}
+.left_container{
+    width: 40vw;
+}
+.left_container p{
+    font-size: medium;
+    padding: 13px;
+}
+.right_container img{
+    width: 19vw;
+}
+.heading{
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 13px;
+}
+.left_container button{
+    margin-left: 10px;
+}
+.yellow{
+    color: orange;
+    margin-left: 10px;
+}
+.review{
+    padding: 13px;
+}
+.supporters{
+   padding: 33px;
+   display: flex;
+   flex-direction: column;
+  align-items: center;
+}
+.supporter_images{
+    
+display: flex;
+margin: 13px;
+gap: 3rem;
+}
+@media only screen and (max-width: 740px) {
+    .right_container {
+   display: none;
+    }
+    .list{
+        display: none;
+    }
+    .signin_container{
+        display: none;
+    }
+    #menu{
+        display: block;
+        visibility: visible;
+    }
+    .dropdown_container{
+        width: 50vw;
+        right: 2vw;
+    }
+    .supporter_images{
+  gap: 2rem;
+
+    }
+    #close{
+        display: block;
+    }
+    .supporter_images img{
+        width: 6rem;
+    }
+  }
+
